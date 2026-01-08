@@ -24,8 +24,9 @@ body {
 }
 
 .profile-photo {
-  width: 160px;
-  height: 160px;
+  max-width: 160px;
+  width: auto;
+  height: auto; /* Keep natural aspect ratio */
   border-radius: 50%;
   border: 3px solid #fff;
   margin-bottom: 20px;
@@ -121,6 +122,14 @@ body {
 /* Footer */
 footer {
   padding: 20px;
-  background-color: #111;
+  text-align: center;
   color: #aaa;
+  position: relative;
+}
+
+.footer-line {
+  width: 100px;
+  height: 2px;
+  background-color: #1e90ff;
+  margin: 0 auto 10px auto;
 }
