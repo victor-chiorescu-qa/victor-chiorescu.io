@@ -5,16 +5,26 @@
   box-sizing: border-box;
 }
 
-/* Body */
 body {
   font-family: 'Arial', sans-serif;
   color: #fff;
   background-color: #000;
   text-align: center;
 
-  /* 🔒 Disable scrolling */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  /* 🔒 No scrolling */
   overflow: hidden;
 }
+
+.hero,
+.resume,
+.contact {
+  flex-shrink: 0;
+}
+
 
 /* Hero Section */
 .hero {
@@ -104,9 +114,11 @@ body {
 
 /* Footer */
 footer {
+  margin-top: auto; /* ⬇ Push footer to bottom */
   padding: 12px;
   color: #aaa;
 }
+
 
 .footer-line {
   width: 80px;
